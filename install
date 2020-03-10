@@ -7,7 +7,7 @@ rm lib/libpulp.a lib/libxtrapulp.a
 rm include/pulp.h include/xtrapulp.h
 
 cd pulp/$PULPVERSION/
-make clean ; make -j
+make clean ; make CXX=$1 -j
 cd ../..
 
 cd xtrapulp/$XTRAPULPVERSION/
